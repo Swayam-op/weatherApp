@@ -1,0 +1,177 @@
+@import url(weather-icons-wind.css);
+@import url(weather-icons-wind.min.css);
+@import url(weather-icons.css);
+@import url(weather-icons.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300&display=swap');
+body{
+    margin: 0 0;
+    padding: 0 0 ;
+    background-color: #292828;
+    /* background-image: linear-gradient(315deg, #000000 0%, #414141 74%); */
+    color: aliceblue;
+}
+.weather{
+    max-width: 800px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.search_box{
+    max-width: 460px;
+    min-width: 320px;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    border-radius: 5px 0 0 5px;
+}
+.search_in{
+
+    flex-basis: 80%;
+   
+}
+.search_box .search_in input{
+ width: 100%;
+ height: 40px;
+ border: none;
+ outline: none;
+ border-radius: 5px 0 0 5px;
+ font-size: 20px;
+ font-weight: bold;
+ font-family: 'Josefin Slab', serif;
+}
+.search_box .search{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    flex-basis: 20%;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.weather_info{
+    border-radius: 15px;
+    margin: auto;
+}
+.weather_info .w_condition{
+    display: flex;
+    max-width: 100%;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #e7eff9;
+    border-radius: 15px 15px 0 0;
+}
+.big_logo #big_icon{
+    font-size: 100px;
+    color: #000000;
+    transition: font-size 0.2s ease-in-out;
+}
+.big_logo #big_icon:hover{
+    font-size: 115px;
+}
+.weather_data{
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    
+    /* box-sizing: border-box; */
+}
+.weather_data .temperature{
+    flex-basis: 70%;
+    background-color: #000000;
+    padding: 1em;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.temperature .deg{
+    font-size: 6rem;
+    text-align: center;
+}
+.temperature .cld{
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 0.6em;
+    font-family: 'Josefin Slab', serif;
+}
+.cld #location{
+    font-size: 1.4rem;
+}
+.weather_data .time{
+
+    flex-basis: 30%;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    font-size: 2rem;
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+   
+}
+
+@media (max-width:490px){
+    .weather_data .temperature{
+        flex-basis: 100%;
+    }
+    .weather_data .time{
+        flex-basis: 100%;
+    }
+
+
+    /* TOP GAP */
+    .weather{
+        padding-top: 15px;
+    }
+}
+
+.four_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    background-color: #e7eff9;
+    border-radius: 0 0 15px 15px;
+}
+.small_cont{
+    flex-basis: 24%;
+    min-width: 140px;
+    height: 10vh;
+    box-sizing: border-box;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.small_cont .small_logo{
+    text-align: center;
+    flex: 30%;
+    color: #9599E2;
+    font-size: 25px;
+    box-sizing: border-box;
+    transition: font-size 0.1s ease-in-out;
+}
+
+.small_cont .small_logo:hover{
+    font-size: 30px;
+}
+
+.small_cont .small_data{
+    text-align: center;
+    flex-basis: 70%;
+    color:black;
+}
+.creator{
+    margin-top: 15px;
+    color:#9599E2 ;
+    font-size: 12px;
+}
+.creator span{
+    color: #e7eff9;
+    cursor: pointer;
+}
